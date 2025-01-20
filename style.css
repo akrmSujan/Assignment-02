@@ -99,7 +99,7 @@ nav{
     text-decoration: none;
  } 
  nav a:hover {
-    background-color: aqua;
+    background-color: white;
  }
  .school{
     color: rgb(17, 17, 17);
@@ -113,7 +113,7 @@ font-weight: 700;
 #checkbox-for-sidebar-active{
     display: none;
 }
-.open-sidebar , .close-sidebar{
+.open-sidebar{
     display: none;
 }
 /* End of nav bar */
@@ -133,7 +133,6 @@ margin: 24px 0px;
 }
 .banner-kotha{
     width: 640px;
-height: 331px;
 }
 .banner{
     display: flex;
@@ -142,6 +141,17 @@ height: 331px;
  gap: 100px;
  align-items: center;
 }
+/* Banner-complete */
+/*Card-Section  */
+.curriculum{
+    color: rgb(0, 0, 0);
+font-family: Quicksand;
+font-size: 46px;
+font-weight: 700;
+text-align: center;
+margin-top: 60px;
+}
+
 /* Responsive-Styles */
 @media screen and (max-width:650px) {
     .link-container{
@@ -152,7 +162,7 @@ height: 331px;
         right: -100%;
         z-index: 10;
         width: 450px;
-        background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+       background-color: rgb(17, 57, 57);
         transition: 0.75s ease-out;
     }
     .school{
@@ -175,7 +185,7 @@ height: 331px;
         padding: 20px 30px ;
         justify-content: flex-start;
     }
-    .open-sidebar , .close-sidebar , .home-link{
+    .open-sidebar , .home-link{
         display: block;
     }
 #checkbox-for-sidebar-active:checked ~ .link-container{
