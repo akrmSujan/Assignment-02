@@ -4,4 +4,197 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background-image: url(assets/bg.png);
   }
+  /* shared-style*/
+  .common-button{
+    width: 197px;
+height: 50px;
+border-radius: 12px;
+background: rgb(17, 17, 17);
+color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 700;
+border: none;
+cursor: pointer;
+  }
+.common-button:hover{
+background-color: rgb(22, 34, 74);
+}
+  /* style for nav */
+  .nav-total{
+display: flex;
+height: 120px;
+align-items: center;
+justify-content: space-around;
+margin-bottom: ;
+  }
+  .home{
+    color: rgb(254, 163, 1);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 700;
+  }
+  .about{
+    color: rgb(1, 172, 253);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+  }
+  .facilitie{
+    color: rgb(5, 212, 223);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+  }
+  .admission{
+    color: rgb(93, 88, 239);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+  }
+  .button-01{
+    width: 197px;
+height: 50px;
+border-radius: 12px;
+background: rgb(254, 163, 1);
+color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 600;
+border: none;
+cursor: pointer;
+  }
+  .button-01:hover{
+    background-color: brown;
+  }
+  .bag{
+display: flex;
+align-items: center;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    display: flex;
+    justify-content:flex-end;
+    height: 60px;
+    align-items: center;
+}
+.link-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+  nav a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+ } 
+ nav a:hover {
+    background-color: aqua;
+ }
+ .school{
+    color: rgb(17, 17, 17);
+font-family: Quicksand;
+font-size: 32px;
+font-weight: 700;
+ }
+ nav .home-link{
+    margin-right: auto;
+ }
+#checkbox-for-sidebar-active{
+    display: none;
+}
+.open-sidebar , .close-sidebar{
+    display: none;
+}
+/* End of nav bar */
+/* Banner section */
+.banner-title{
+    font-family: Quicksand;
+font-size: 56px;
+font-weight: 700;
+color: rgb(17, 17, 17);
+}
+.banner-description{
+    color: rgb(17, 17, 17);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 400;
+margin: 24px 0px;
+}
+.banner-kotha{
+    width: 640px;
+height: 331px;
+}
+.banner{
+    display: flex;
+ width: 80%;
+ margin: 0 auto;
+ gap: 100px;
+ align-items: center;
+}
+/* Responsive-Styles */
+@media screen and (max-width:650px) {
+    .link-container{
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 450px;
+        background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+        transition: 0.75s ease-out;
+    }
+    .school{
+        display: none;
+    }
+    .button-01{
+        display: none;
+    }
+    nav {
+        border: none;
+    }
+    .nav-total{
+        gap: 250px;
+        border: 0.5px solid rgb(254, 163, 1);
+    }
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%; 
+        padding: 20px 30px ;
+        justify-content: flex-start;
+    }
+    .open-sidebar , .close-sidebar , .home-link{
+        display: block;
+    }
+#checkbox-for-sidebar-active:checked ~ .link-container{
+    right: 0;
+}
+#checkbox-for-sidebar-active:checked ~ #overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}  
+#checkbox-for-sidebar-active:checked ~ .open-sidebar{
+    display: none;
+}
+.banner{
+    flex-direction: column-reverse;
+}
+.banner-kotha{
+    width: 100%;
+height: 331px;
+text-align: center;
+}
+} 
