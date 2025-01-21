@@ -13,7 +13,12 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+  .marquee-text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: linear-gradient(to bottom, #0000cc 0%, #ccff99 100%);
+  }
   /* shared-style*/
   .common-button{
     width: 197px;
@@ -420,8 +425,67 @@ margin-left: 50px;
     margin-top: 80px;
     padding-bottom: 60px;
  }
+ /* style for footer section */
+ .footer-img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+ }
+ .img-title{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 42.14px;
+font-weight: 700;
+ }
+ .footer-decription{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 400;
+ }
+ .about-title{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 24px;
+font-weight: 700;
+ }
+ .footer-about{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+ }
+ .footer-about a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+ }
+ .footer-touch{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 26px;
+font-weight: 700;
+ }
+ .footer-bag{
+    width: 82.9px;
+height: 81.65px;
+
+ }
+ .footer-links{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+ }
+ .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    background: rgb(1, 172, 253);
+    height: 519px;
+    width: 100%;
+ }
+
 /* Responsive-Styles */
-@media screen and (max-width:650px) {
+@media screen and (max-width:600px) {
     .link-container{
         flex-direction: column;
         align-items: flex-start;
@@ -535,4 +599,15 @@ font-weight: 700;
 margin-left: 20px;
 width: auto;
  }
+ .footer{
+    flex-direction: column;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+ }
+ .footer-about , .footer-touch , .footer-links{
+    width: 100%;
+ }
+ 
 } 
