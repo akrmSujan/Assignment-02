@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 .quicksand-font {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -6,6 +7,13 @@
     font-style: normal;
     background-image: url(assets/bg.png);
   }
+  .raleway-raleway {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
   /* shared-style*/
   .common-button{
     width: 197px;
@@ -100,6 +108,7 @@ nav{
  } 
  nav a:hover {
     background-color: white;
+    transform: scale(1.1);
  }
  .school{
     color: rgb(17, 17, 17);
@@ -107,13 +116,10 @@ font-family: Quicksand;
 font-size: 32px;
 font-weight: 700;
  }
- nav .home-link{
-    margin-right: auto;
- }
 #checkbox-for-sidebar-active{
     display: none;
 }
-.open-sidebar{
+.open-sidebar, .close-sidebar{
     display: none;
 }
 /* End of nav bar */
@@ -156,14 +162,14 @@ margin-bottom: 60px;
 font-family: Quicksand;
 font-size: 24.52px;
 font-weight: 700;
-margin: 20px;
+margin-top: 20px;
 }
 .card-description{
     color: rgb(128, 128, 128);
 font-family: Raleway;
 font-size: 15.09px;
 font-weight: 500;
-margin: 30px;
+margin-top: 30px;
 }
 .one{
     color: rgb(100, 200, 255);
@@ -188,14 +194,14 @@ padding: 50px 40px 55px 38px;
 font-family: Quicksand;
 font-size: 24.52px;
 font-weight: 700;
-margin: 20px;
+margin-top: 20px;
 }
 .card-description{
     color: rgb(128, 128, 128);
 font-family: Raleway;
 font-size: 15.09px;
 font-weight: 500;
-margin: 30px;
+margin-top: 30px;
 }
 .two{
     color: rgb(240, 170, 0);
@@ -220,14 +226,14 @@ padding: 50px 40px 55px 38px;
 font-family: Quicksand;
 font-size: 24.52px;
 font-weight: 700;
-margin: 20px;
+margin-top: 20px;
 }
 .card-description{
     color: rgb(128, 128, 128);
 font-family: Raleway;
 font-size: 15.09px;
 font-weight: 500;
-margin: 30px;
+margin-top: 30px;
 }
 .three{
     color: rgb(135, 0, 255);
@@ -260,6 +266,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     border-top: 1px dashed rgb(175, 183, 192);
     border-bottom: 1px dashed rgb(175, 183, 192);
 }
+/* End of cards */
 .golla{
     width: 60px;
 height: 60px;
@@ -281,6 +288,41 @@ cursor: pointer;
 .golla:hover{
     background-color: black;
 }
+/* End of crcle */
+/* Starting of Story section */
+.story-card-one{
+    width: 540px;
+/* height: 337px; */
+border-radius: 16px 16px 0px 0px;
+background:rgb(217, 217, 217);
+}
+.story-card-one img{
+    border-radius: 16px 16px 0px 0px;
+  } 
+ .story-card-one button{
+    width: 174.51px;
+height: 47.93px;
+border-radius: 47.93px;
+border-radius: 47.93px;
+border: none;
+background: rgb(60, 216, 232);
+color: rgb(255, 255, 255);
+font-family: Raleway;
+font-size: 15.34px;
+font-weight: 500;
+transform: translateX(40px) translateY(-25px);
+ }
+ .ellipes{
+    display: -webkit-box;    
+  -webkit-line-clamp: 2;       
+  -webkit-box-orient: vertical; 
+  overflow: hidden;           
+  text-overflow: ellipsis;
+ }
+ .story-kotha{
+    /* margin-left: 30px; */
+    padding: 0px 35px 35px 35px;
+ }
 /* Responsive-Styles */
 @media screen and (max-width:650px) {
     .link-container{
@@ -290,7 +332,8 @@ cursor: pointer;
         top: 0;
         right: -100%;
         z-index: 10;
-        width: 450px;
+        width: 80%;
+        /* width: 450px; */
        background-color: rgb(17, 57, 57);
         transition: 0.75s ease-out;
     }
@@ -314,7 +357,7 @@ cursor: pointer;
         padding: 20px 30px ;
         justify-content: flex-start;
     }
-    .open-sidebar , .home-link{
+    .open-sidebar , .close-sidebar , .home-link{
         display: block;
     }
 #checkbox-for-sidebar-active:checked ~ .link-container{
@@ -330,13 +373,26 @@ cursor: pointer;
 }
 .banner{
     flex-direction: column-reverse;
+    gap: 10px;
+    width: 90%;
 }
 .banner-kotha{
-    width: 70%;
+    width: 95%;
 text-align: center;
+}
+.banner-title{
+    font-size: 32px;
+}
+.hero-kids , .card-1 , .card-2 , .card-3{
+    width: 100%;
+}
+.circle{
+    display: none;
 }
 .cards{
     flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
 }
 .card-section{
     border: none;
