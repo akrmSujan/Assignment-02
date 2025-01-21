@@ -621,10 +621,11 @@ width: auto;
     height: auto;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 40px;
- }
- .footer-about , .footer-touch , .footer-links{
+    /* padding-left: 40px; */
     width: 100%;
+ }
+ .footer-about , .footer-edu , .footer-touch , .footer-links{
+    width: 80%;
  }
 } 
 /* All finish I think,See you soon @Raeder (-_-) & gonna crack it */
