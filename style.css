@@ -33,9 +33,11 @@ font-size: 20px;
 font-weight: 700;
 border: none;
 cursor: pointer;
+transition: 0.5s ease-out;
   }
 .common-button:hover{
-background-color: rgb(22, 34, 74);
+background-color: rgb(54, 33, 185);
+transform: scale(1.1);
 }
   /* style for nav */
   .nav-total{
@@ -80,9 +82,11 @@ font-size: 20px;
 font-weight: 600;
 border: none;
 cursor: pointer;
+transition: 0.5s ease-out;
   }
   .button-01:hover{
     background-color: brown;
+    transform: scale(1.1);
   }
   .bag{
 display: flex;
@@ -220,6 +224,10 @@ font-size: 15.09px;
 font-weight: 700;
 text-decoration: none;
 }
+.cards a:hover{
+    color: black;
+    transform: scale(1.2);
+}
 .card-2{
     width: 367.8px;
 height: 476.78px;
@@ -296,9 +304,11 @@ cursor: pointer;
     align-items: center;
     margin-top: 80px;
     gap: 10px;
+    transition: 0.5s ease-out;
 }
 .golla:hover{
     background-color: black;
+    transform: scale(1.1);
 }
 /* End of circle */
 /* Starting of Story section */
@@ -494,6 +504,11 @@ height: 81.65px;
     height: 519px;
     width: 100%;
  }
+ .footer a:hover{
+    color: black;
+    transform: scale(1.1);
+    transition: 0.75s ease-out;
+}
 /* The end */
 /* Responsive-Styles */
 @media screen and (max-width:576px) {
@@ -687,4 +702,23 @@ width: auto;
             width: 80%;
          }
 }
-/* All finish I think,See you soon @Raeder (-_-) & gonna crack it */
+@media screen and (min-width:992px) and (max-width:1260px){
+    .story-of-card , .banner{
+        width: 95%;
+    }
+    .story-card-01{
+        width: 400px;
+    }
+    .story-card-img{
+        width: 400px;
+        height: 337px;
+    }
+    .cards{
+        width: 90%;
+    }
+    .banner-kotha{
+        height: auto;
+    }
+}
+
+/* All finish I think,See you soon @Reader (-_-) & gonna crack it */
