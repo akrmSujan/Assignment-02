@@ -359,7 +359,7 @@ background:url(assets/story-2.png) , rgb(255, 255, 255);
     border-radius: 16px 16px 0px 0px;
 background:url(assets/story-3.png) , rgb(255, 255, 255);
  }
- .story-card , .story-card-hidden{
+ .story-card{
     width: 291px;
     border-radius: 16px;
 background: rgb(255, 255, 255);
@@ -549,9 +549,14 @@ height: 81.65px;
 .banner-kotha{
     width: 95%;
 text-align: center;
+margin-top: 20px;
 }
 .banner-title{
     font-size: 32px;
+}
+.curriculum{
+    font-size: 26px;
+font-weight: 700;
 }
 .hero-kids , .card-1 , .card-2 , .card-3{
     width: 100%;
@@ -572,6 +577,9 @@ text-align: center;
 }
 .story-card-hidden{
     display: block;
+    height: 179px;
+    border-radius: 9.53px;
+    background: rgb(255, 255, 255);
  }
  .visible-cards{
     display: grid;
@@ -585,7 +593,7 @@ text-align: center;
     width: auto;
     height: 179px;
  }
- .story-card-hidden ,  .story-card-img-visible ,  .story-card-img-visible-1 ,  .story-card-img-visible-2 ,  .story-card-img-visible-3{
+ .story-card-img-visible ,  .story-card-img-visible-1 ,  .story-card-img-visible-2 ,  .story-card-img-visible-3{
     width: 173px;
     height: 105px;
     background-size: cover;
