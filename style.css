@@ -144,14 +144,15 @@ font-size: 20px;
 font-weight: 400;
 margin: 24px 0px;
 }
-.banner-kotha{
-    width: 640px;
-}
+ .banner-kotha{
+    width: 55%;
+    height: 331px;
+ }
 .banner{
     display: flex;
- width: 80%;
+ width: 78%;
  margin: 0 auto;
- gap: 100px;
+ justify-content: space-between;
  align-items: center;
 }
 /* Banner-complete */
@@ -267,6 +268,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     gap: 30px;
     width: 76%;
     margin: 0 auto;
+    justify-content: space-evenly;
 }
 .card-section{
     width: 100%;
@@ -308,9 +310,9 @@ cursor: pointer;
 }
 .story-of-card{
     display: flex;
-    gap: 20px;
-    width: 77%;
+    width: 80%;
     margin: 0 auto;
+    justify-content: space-evenly;
 }
 .story{
     background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
@@ -494,7 +496,7 @@ height: 81.65px;
  }
 /* The end */
 /* Responsive-Styles */
-@media screen and (max-width:600px) {
+@media screen and (max-width:576px) {
     .link-container{
         flex-direction: column;
         align-items: flex-start;
@@ -628,4 +630,61 @@ width: auto;
     width: 80%;
  }
 } 
+@media screen and (min-width:576px) and (max-width:1002px){
+    .nav-total , .story-card , .cards ,  .story-card-01 , .story-card-img{
+        width: 100%;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .story-of-card{
+        flex-direction: column;
+        width: 70%;
+    }
+    .banner-kotha{
+        width: 80%;
+        text-align: center;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .banner-title{
+        font-size: 35px;
+        margin-top: 60px;
+    }
+    .banner-description{
+        font-size: 16px;
+    }
+    .visible-cards {
+        display: grid;
+        grid-template-columns: 240px 240px;
+        grid-template-rows: 220px 220px;
+    }
+    .story-card-img-visible ,  .story-card-img-visible-1 ,  .story-card-img-visible-2 ,  .story-card-img-visible-3{
+        width: 240px;
+        height: 105px;
+        background-size: cover;}
+        .story-btn-1 , .story-btn-2{
+            width: 142.91px;
+        height: 22.83px;
+        border-radius: 28.54px;
+        font-size: 9.13px;
+        font-weight: 500;
+        transform: translateY(-10px) translateX(20px);}
+        .story-title{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .footer{
+            flex-direction: column;
+            height: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .footer-about , .footer-edu , .footer-touch , .footer-links{
+            width: 80%;
+         }
+}
 /* All finish I think,See you soon @Raeder (-_-) & gonna crack it */
