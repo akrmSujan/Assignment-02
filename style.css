@@ -478,4 +478,44 @@ text-align: center;
 .card-section{
     border: none;
 }
+.story-card-01{
+    display: none;
+}
+.story-card-hidden{
+    display: block;
+ }
+ .visible-cards{
+    display: grid;
+    grid-template-columns: 173px 173px;
+    grid-template-rows: 179px 179px;
+    gap: 19px;
+ }
+ .story-card {
+    width: auto;
+    height: 179px;
+ }
+ .story-card-hidden ,  .story-card-img-visible ,  .story-card-img-visible-1 ,  .story-card-img-visible-2 ,  .story-card-img-visible-3{
+    width: 173px;
+    height: 105px;
+    background-size: cover;
+ }
+ .story-of-card{
+    width: 90%;
+   margin: 0 auto;
+ }
+ .story-btn{
+    width: 103.91px;
+height: 22.83px;
+border-radius: 28.54px;
+font-size: 9.13px;
+font-weight: 500;
+transform: translateY(-10px) translateX(20px);
+ }
+ .story-title{
+    font-family: Quicksand;
+font-size: 9.13px;
+font-weight: 700;
+margin-left: 20px;
+width: auto;
+ }
 } 
