@@ -136,7 +136,7 @@ font-weight: 700;
 /* Banner section */
 .banner-title{
     font-family: Quicksand;
-font-size: 56px;
+font-size: 54px;
 font-weight: 700;
 color: rgb(17, 17, 17);
 }
@@ -279,10 +279,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 }
 .card-section{
     width: 100%;
-    /* height: 880px; */
     padding: 60px 0px 60px 0px;
-    border-top: 1px dashed rgb(175, 183, 192);
-    border-bottom: 1px dashed rgb(175, 183, 192);
 }
 /* End of cards */
 /* Arrow Button */
@@ -584,9 +581,6 @@ font-weight: 700;
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
-}
-.card-section{
-    border: none;
 }
 .story-card-01{
     display: none;
