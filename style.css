@@ -624,7 +624,7 @@ transform: translateY(-10px) translateX(20px);
 font-size: 9.13px;
 font-weight: 700;
 margin-left: 20px;
-width: auto;
+width: 80%;
  }
  .footer{
     flex-direction: column;
@@ -635,7 +635,7 @@ width: auto;
     width: 100%;
  }
  .footer-about , .footer-edu , .footer-touch , .footer-links{
-    width: 80%;
+    width: 90%;
  }
 } 
 @media screen and (min-width:576px) and (max-width:1002px){
